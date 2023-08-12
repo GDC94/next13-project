@@ -1,0 +1,23 @@
+{
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prefer-const": "error",
+    "@typescript-eslint/no-empty-function": [
+      "error",
+      {
+        "allow": ["constructors"]
+      }
+    ],
+    "@typescript-eslint/ban-types": "off",
+    "no-console": ["warn"],
+    "no-unused-vars": "error",
+    "valid-jsdoc": "off"
+  }
+}

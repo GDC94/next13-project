@@ -1,0 +1,4 @@
+dist
+*.styles.ts
+*.styles.*
+icons.tsx
