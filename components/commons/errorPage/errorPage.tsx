@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { MainLayout } from "@/layouts/mainLayout";
-
 import {
   ErrorContainer,
   ErrorNumberAndMessage,
@@ -18,10 +17,7 @@ interface ErrorPageProps {
   linkButton?: string;
 }
 
-export const ErrorPage = ({
-  statusCode,
-  message,
-}: ErrorPageProps) => {
+export const ErrorPage = ({ statusCode, message }: ErrorPageProps) => {
   return (
     <MainLayout full>
       <Head>
@@ -35,9 +31,7 @@ export const ErrorPage = ({
               {message}
               <MessageLine />
             </Message>
-            <ButtonWrapper>
-
-            </ButtonWrapper>
+            <ButtonWrapper></ButtonWrapper>
           </MessageButton>
         </ErrorNumberAndMessage>
       </ErrorContainer>
