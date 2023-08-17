@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { MainLayout } from "@/layouts/mainLayout";
+
 import {
   ErrorContainer,
   ErrorNumberAndMessage,
@@ -9,6 +9,7 @@ import {
   MessageLine,
   ButtonWrapper,
 } from "./errorPage.styles";
+import { MainLayout } from "layouts/mainLayout";
 
 interface ErrorPageProps {
   statusCode?: string | number;

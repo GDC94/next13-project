@@ -1,4 +1,5 @@
-import { classes } from "@/utils";
+
+import { classes } from "utils";
 import { SkeletonEffect } from "./skeleton.styles";
 
 export interface SkeletonProps {

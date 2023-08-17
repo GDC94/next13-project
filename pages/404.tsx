@@ -1,4 +1,5 @@
-import ErrorPage from "@/components/commons/errorPage/errorPage";
+import ErrorPage from "components/commons/errorPage/errorPage";
+
 
 
 export const ErrorPage404 = () => {

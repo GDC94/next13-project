@@ -1,5 +1,6 @@
-import { DEVICES } from "@/config";
+
 import styled from "@emotion/styled";
+import { DEVICES } from "config";
 
 export const ButtonWrapper = styled.div`
   width: 100%;
