@@ -1,6 +1,5 @@
 import { createContext, useContext } from "react";
-import { PortfolioState } from "typings/challengeState";
-
+import { PortfolioState } from "typings/portfolioState";
 
 const PortfolioContext = createContext<
   | {
@@ -18,8 +17,3 @@ export const usePortfolioState = () => {
   }
   return context;
 };
-
-
-
-
-

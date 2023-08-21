@@ -1,1 +1,1 @@
-export { default as ChallengeReducer } from "./challengeReducer";
+export { default as ChallengeReducer } from "./portfolioReducer";

@@ -1,14 +1,14 @@
 import React, { useMemo, useReducer } from "react";
 import { portfolioInitialState } from "./initialValue";
-import challengeReducer from "reducers/challengeReducer";
 import PortfolioContext from "./portfolioContext";
+import PortfolioReducer from "reducers/portfolioReducer";
 
 type UserProviderProps = {
   children: React.ReactNode;
 };
 
-const ChallengeProvider = ({ children }: UserProviderProps) => {
-  const [statePortfolio] = useReducer(challengeReducer, portfolioInitialState);
+const PortfolioProvider = ({ children }: UserProviderProps) => {
+  const [statePortfolio] = useReducer(PortfolioReducer, portfolioInitialState);
   /* const { userKey } = useGetUserKey(); */
 
   /*El propósito principal de useMemo es optimizar el rendimiento evitando cálculos 
@@ -30,4 +30,4 @@ const ChallengeProvider = ({ children }: UserProviderProps) => {
   );
 };
 
-export default ChallengeProvider;
+export default PortfolioProvider;

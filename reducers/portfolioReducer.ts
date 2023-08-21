@@ -1,10 +1,11 @@
 import { portfolioInitialState } from "context/initialValue";
-import { PortfolioState } from "typings/challengeState";
+import { PortfolioState } from "typings/portfolioState";
+
 
 export type Action = { type: "reset portfolio state" };
 
 const PortfolioReducer = (
-  stateChallenge: PortfolioState,
+  statePortfolio: PortfolioState,
   action: Action,
 ): PortfolioState => {
   switch (action.type) {
