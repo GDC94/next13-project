@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <MainLayout>
       <Head>
-        <title>Hello! I&apos;m German</title>
+        <title>Hellooo! I&apos;m German</title>
       </Head>
       <div>germaaaaaa</div>
     </MainLayout>
