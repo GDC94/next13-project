@@ -9,10 +9,11 @@ import ERC20 from "../abis/ERC20.json";
  * @return Method to calculate the balance of a token
  */
 const balanceOf =
-  (web3: Web3) => async (tokenAddress: string) => {
+  (web3: Web3) => async (tokenAddress: string, walletAddress: string) => {
     const contract = new web3.eth.Contract(ERC20 as any, tokenAddress);
-    const result = await contract.methods.balanceOf().call();
+    const result = await contract.methods.balanceOf(walletAddress).call();
     return result;
   };
 
 export default balanceOf;
+

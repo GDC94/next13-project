@@ -10,9 +10,10 @@ const useLoadProvider = () => {
   useEffect(() => {
     const loadProvider = async () => {
       const provider = (await detectEthereumProvider()) as CustomProvider;
+
+      
       if (provider?.isPortal) {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const web3 = new Web3(provider as any);
+        const web3 = new Web3(provider);
         setWeb3Api({
           provider,
           web3,

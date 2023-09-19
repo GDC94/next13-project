@@ -6,11 +6,11 @@ import { Contract } from "web3-eth-contract";
 import { CustomProvider } from "typings/CustomProvider";
 
 export interface Web3ContextMethods {
-  connect: () => void;
+  connect: () => Promise<void>;
   switchChain: (chainId: string) => Promise<void>;
   getBalance: (address: string) => Promise<string>;
   balanceOf: (tokenAddress: string, walletAddress: string) => Promise<number>;
-  loadContract: (abi: any, contractAddress: string) => Contract<any>;
+  loadContract: (abi, contractAddress: string) => Contract;
 }
 
 export interface web3ContextState {
@@ -28,6 +28,7 @@ export default Web3Context;
 
 export const useWeb3 = () => {
   const context = useContext(Web3Context);
+
   if (context === undefined) {
     throw new Error("useCount must be used within a CountProvider");
   }
