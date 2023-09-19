@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+echo '### <CHECK IF YOU ARE FOLLOWING THE BEST PRACTICES FOR CONVENTIONAL COMMITS> ###'
+.git/hooks/commit-msg $1
+echo '### <YOU ARE THE BEST FOLLOWING THE RULES!!!> ###'
+echo '### <ALL IS DONE!!!> ###'
