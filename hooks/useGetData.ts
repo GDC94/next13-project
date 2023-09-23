@@ -1,5 +1,6 @@
 import useSWRWrapper from "components/libs/swr/useSWRWrapper";
-import { usePortfolioState } from "context/portfolioContext";
+import { usePortfolioState } from "context/portfolioContext/portfolioContext";
+
 import { getCharactersUrl } from "services";
 import { allCharactersFetcher } from "services/fetchers";
 
